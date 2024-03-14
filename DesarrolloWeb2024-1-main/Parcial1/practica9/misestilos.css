@@ -1,0 +1,25 @@
+.parrafo{
+    border: 1px solid palevioletred;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    color: pink;
+    font-size: larger;
+    font-weight: 500;
+}
+
+div{
+    border: 2px solid peru;
+    color: burlywood;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 10px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+span{
+    color:palegoldenrod;
+    font-style: oblique;
+    font-weight: 700;
+}
