@@ -13,10 +13,42 @@
     <div class="row">
         <h1 style="background-color: black; color: pink;">SELECT * FROM `alumno` WHERE 1</h1>
         <p>Consulta 1. Obtener el listado de todos los alumnos de la facultad</p>
-        <img src="imagenes/Captura1.PNG" alt="Imagen de consulta">
-        <h2 style="background-color: black; color: pink;">SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso = asignatura.curso</h2>
+        <img src="imagenes/Captura1.PNG" alt="">
+
+        <h1 style="background-color: black; color: pink;">SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso = asignatura.curso</h1>
         <p>Consulta 2. Obtener listado de cursos(nombre) y las asignaturas que tiene.</p>
         <img src="imagenes/Captura2.PNG" alt="">
+
+        <h1 style="background-color: black; color: pink;">SELECT alumno.nombre, alumno.apellido1, alumno.apellido2 FROM alumno WHERE beca LIKE "si"</h1>
+        <p>Consulta 3. Obtener el listado (nombre y apellidos) de alumnos que tengan beca.</p>
+        <img src="imagenes/Captura3.PNG" alt="">
+
+        <h1 style="background-color: black; color: pink;">SELECT profesor.nombre, profesor.apellido1, profesor.apellido2, tlfcontactoprof.telefono FROM profesor INNER JOIN tlfcontactoprof ON profesor.idProfesor = tlfcontactoprof.idProfesor</h1>
+        <p>Consulta 4. Obtener el listado de PROFESORES(NOMBRE, APELLIDO) y su NUMERO de CONTACTO</p>
+        <img src="imagenes/Captura4.PNG" alt="">
+
+        <h1 style="background-color: black; color: pink;">SELECT alumno.nombre, alumno.apellido1, alumno.apellido2,asignatura.idAsignatura FROM alumno INNER JOIN matricula ON alumno.idAlumno = matricula.idAlumno INNER JOIN asignatura ON matricula.idAsignatura = asignatura.idAsignatura WHERE asignatura.idAsignatura LIKE "AS009"</h1>
+        <p>Consulta 5. Obtener el listado de alumnos (TODOS LOS CAMPOS) que estan inscritos a la asignatura de programación AS009.</p>
+        <img src="imagenes/Captura5.PNG" alt="">
+
+        <h1 style="background-color: black; color: pink;"></h1>
+        <p>Consulta 6. Obtener el listado de profesores y asignaturas que imparten.</p>
+        <img src="" alt="">
+
+        <h1 style="background-color: black; color: pink;"></h1>
+        <p>Consulta 7. Mostrar la asignatura que tiene mas alumnos inscritos y su total.</p>
+        <img src="" alt="">
+
+        <h1 style="background-color: black; color: pink;"></h1>
+        <p>Consulta 8. Obtener el listado de ALUMNOS que les da clase el PROFESOR con ID PRO48 (JOSE MANUEL).</p>
+        <img src="" alt="">
+
+        <h1 style="background-color: black; color: pink;"></h1>
+        <p>Consulta 9. Obtener el listado de cursos, con asignatura, y el maestro que las imparte.</p>
+        <img src="" alt="">
+
+        <h1 style="background-color: black; color: pink;"></h1>
+        <p>Obtener el listado de alumnos, con asignaturas que cursa, PROFESOR que la imparte y curso al que pertenece.</p>
     </div>
 </div>
     <script src="js/bootstrap.js"></script>
