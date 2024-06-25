@@ -31,13 +31,13 @@
         <p>Consulta 5. Obtener el listado de alumnos (TODOS LOS CAMPOS) que estan inscritos a la asignatura de programación AS009.</p>
         <img src="imagenes/Captura5.PNG" alt="">
 
-        <h1 style="background-color: black; color: pink;"></h1>
+        <h1 style="background-color: black; color: pink;">SELECT profesor.nombre, asignatura.nombre FROM profesor INNER JOIN impartir ON profesor.idProfesor=impartir.idProfesor INNER JOIN asignatura ON impartir.idAsignatura=asignatura.idAsignatura</h1>
         <p>Consulta 6. Obtener el listado de profesores y asignaturas que imparten.</p>
-        <img src="" alt="">
+        <img src="imagenes/Captura6.PNG" alt="">
 
-        <h1 style="background-color: black; color: pink;"></h1>
-        <p>Consulta 7. Mostrar la asignatura que tiene mas alumnos inscritos y su total.</p>
-        <img src="" alt="">
+        <h1 style="background-color: black; color: pink;">SELECT asignatura.nombre, COUNT(matricula.idAlumno) AS TOT_ins FROM asignatura JOIN matricula ON asignatura.idAsignatura = matricula.idAsignatura GROUP BY asignatura.nombre ORDER BY TOT_ins DESC;</h1>
+        <p>Consulta 7. Mostrar la asignatura que tiene mas alumnos inscritos y su tot   al.</p>
+        <img src="imagenes/Captura7.PNG" alt="">
 
         <h1 style="background-color: black; color: pink;"></h1>
         <p>Consulta 8. Obtener el listado de ALUMNOS que les da clase el PROFESOR con ID PRO48 (JOSE MANUEL).</p>
@@ -48,7 +48,7 @@
         <img src="" alt="">
 
         <h1 style="background-color: black; color: pink;"></h1>
-        <p>Obtener el listado de alumnos, con asignaturas que cursa, PROFESOR que la imparte y curso al que pertenece.</p>
+        <p>Consulta 10. Obtener el listado de alumnos, con asignaturas que cursa, PROFESOR que la imparte y curso al que pertenece.</p>
     </div>
 </div>
     <script src="js/bootstrap.js"></script>
