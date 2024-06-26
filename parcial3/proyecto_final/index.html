@@ -7,48 +7,49 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.7.1.js"></script>
 </head>
-<body>
-    Jeyli Johana Coronel López
+<body style="background-color: #f9ad87 ;">
+    Jeyli Johana Coronel López 4AVP
     <div class="container">
     <div class="row">
-        <h1 style="background-color: black; color: pink;">SELECT * FROM `alumno` WHERE 1</h1>
+        <h3 style="background-color: #FF9F7F; color: #ed784a">SELECT * FROM `alumno` WHERE 1</h3>
         <p>Consulta 1. Obtener el listado de todos los alumnos de la facultad</p>
         <img src="imagenes/Captura1.PNG" alt="">
 
-        <h1 style="background-color: black; color: pink;">SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso = asignatura.curso</h1>
+        <h3 style="background-color: #FF9F7F; color: #ed784a">SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso = asignatura.curso</h3>
         <p>Consulta 2. Obtener listado de cursos(nombre) y las asignaturas que tiene.</p>
         <img src="imagenes/Captura2.PNG" alt="">
 
-        <h1 style="background-color: black; color: pink;">SELECT alumno.nombre, alumno.apellido1, alumno.apellido2 FROM alumno WHERE beca LIKE "si"</h1>
+        <h3 style="background-color: #FF9F7F; color: #ed784a">SELECT alumno.nombre, alumno.apellido1, alumno.apellido2 FROM alumno WHERE beca LIKE "si"</h3>
         <p>Consulta 3. Obtener el listado (nombre y apellidos) de alumnos que tengan beca.</p>
         <img src="imagenes/Captura3.PNG" alt="">
 
-        <h1 style="background-color: black; color: pink;">SELECT profesor.nombre, profesor.apellido1, profesor.apellido2, tlfcontactoprof.telefono FROM profesor INNER JOIN tlfcontactoprof ON profesor.idProfesor = tlfcontactoprof.idProfesor</h1>
+        <h3 style="background-color: #FF9F7F; color: #ed784a">SELECT profesor.nombre, profesor.apellido1, profesor.apellido2, tlfcontactoprof.telefono FROM profesor INNER JOIN tlfcontactoprof ON profesor.idProfesor = tlfcontactoprof.idProfesor</h3>
         <p>Consulta 4. Obtener el listado de PROFESORES(NOMBRE, APELLIDO) y su NUMERO de CONTACTO</p>
         <img src="imagenes/Captura4.PNG" alt="">
 
-        <h1 style="background-color: black; color: pink;">SELECT alumno.nombre, alumno.apellido1, alumno.apellido2,asignatura.idAsignatura FROM alumno INNER JOIN matricula ON alumno.idAlumno = matricula.idAlumno INNER JOIN asignatura ON matricula.idAsignatura = asignatura.idAsignatura WHERE asignatura.idAsignatura LIKE "AS009"</h1>
+        <h3 style="background-color: #FF9F7F; color: #ed784a">SELECT alumno.nombre, alumno.apellido1, alumno.apellido2,asignatura.idAsignatura FROM alumno INNER JOIN matricula ON alumno.idAlumno = matricula.idAlumno INNER JOIN asignatura ON matricula.idAsignatura = asignatura.idAsignatura WHERE asignatura.idAsignatura LIKE "AS009"</h3>
         <p>Consulta 5. Obtener el listado de alumnos (TODOS LOS CAMPOS) que estan inscritos a la asignatura de programación AS009.</p>
         <img src="imagenes/Captura5.PNG" alt="">
 
-        <h1 style="background-color: black; color: pink;">SELECT profesor.nombre, asignatura.nombre FROM profesor INNER JOIN impartir ON profesor.idProfesor=impartir.idProfesor INNER JOIN asignatura ON impartir.idAsignatura=asignatura.idAsignatura</h1>
+        <h3 style="background-color: #FF9F7F; color: #ed784a">SELECT profesor.nombre, asignatura.nombre FROM profesor INNER JOIN impartir ON profesor.idProfesor=impartir.idProfesor INNER JOIN asignatura ON impartir.idAsignatura=asignatura.idAsignatura</h3>
         <p>Consulta 6. Obtener el listado de profesores y asignaturas que imparten.</p>
         <img src="imagenes/Captura6.PNG" alt="">
 
-        <h1 style="background-color: black; color: pink;">SELECT asignatura.nombre, COUNT(matricula.idAlumno) AS TOT_ins FROM asignatura JOIN matricula ON asignatura.idAsignatura = matricula.idAsignatura GROUP BY asignatura.nombre ORDER BY TOT_ins DESC;</h1>
-        <p>Consulta 7. Mostrar la asignatura que tiene mas alumnos inscritos y su tot   al.</p>
+        <h3 style="background-color: #FF9F7F; color: #ed784a">SELECT asignatura.nombre, COUNT(matricula.idAlumno) AS TOT_ins FROM asignatura JOIN matricula ON asignatura.idAsignatura = matricula.idAsignatura GROUP BY asignatura.nombre ORDER BY TOT_ins DESC;</h3>
+        <p>Consulta 7. Mostrar la asignatura que tiene mas alumnos inscritos y su total.</p>
         <img src="imagenes/Captura7.PNG" alt="">
 
-        <h1 style="background-color: black; color: pink;"></h1>
+        <h3 style="background-color: #FF9F7F; color: #ed784a">SELECT alumno.nombre, profesor.nombre FROM alumno INNER JOIN profesor INNER JOIN impartir ON impartir.idPRofesor="PR048" INNER JOIN matricula ON impartir.idAsignatura=matricula.idAsignatura;</h3>
         <p>Consulta 8. Obtener el listado de ALUMNOS que les da clase el PROFESOR con ID PRO48 (JOSE MANUEL).</p>
-        <img src="" alt="">
+        <img src="imagenes/Captura8.PNG" alt="">
 
-        <h1 style="background-color: black; color: pink;"></h1>
+        <h3 style="background-color: #FF9F7F; color: #ed784a">SELECT curso.nombreDescriptivo AS "curso", asignatura.nombre AS "asignatura", profesor.nombre AS "profesor" FROM curso INNER JOIN asignatura ON asignatura.curso=curso.idCurso INNER JOIN profesor ON asignatura.coordinador=profesor.idProfesor;</h3>
         <p>Consulta 9. Obtener el listado de cursos, con asignatura, y el maestro que las imparte.</p>
-        <img src="" alt="">
+        <img src="imagenes/Captura9.PNG" alt="">
 
-        <h1 style="background-color: black; color: pink;"></h1>
+        <h3 style="background-color: #FF9F7F; color: #ed784a">SELECT alumno.nombre, asignatura.nombre, profesor.nombre, curso.nombreDescriptivo FROM alumno INNER JOIN matricula ON alumno.idAlumno=matricula.idAlumno INNER JOIN asignatura ON matricula.idAsignatura=asignatura.idAsignatura INNER JOIN impartir ON impartir.idAsignatura=asignatura.idAsignatura INNER JOIN profesor ON impartir.idProfesor=profesor.idProfesor INNER JOIN curso ON curso.idCurso=asignatura.curso;</h3>
         <p>Consulta 10. Obtener el listado de alumnos, con asignaturas que cursa, PROFESOR que la imparte y curso al que pertenece.</p>
+        <img src="imagenes/Captura10.PNG" alt="">
     </div>
 </div>
     <script src="js/bootstrap.js"></script>
