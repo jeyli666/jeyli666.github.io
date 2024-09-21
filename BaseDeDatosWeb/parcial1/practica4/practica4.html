@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen en línea</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body style="background-color: #C29D93">
+    <div class="container">
+        <form action="practica4.php" method="POST">
+            <div class="row">
+                <h1 style="color: #F1DCCD; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Exámen de programación</h1><hr>
+                    <div class="card mb-4">
+                        <div class="card-header" style="color: #FFE0ED; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                        1. ¿Cuál es el sueño principal de Monkey D. Luffy y qué lo motiva a lograrlo? 
+                        </div>
+                        <div class="card-body" style="color: #F1DCCD; font-family: sans-serif;">
+                            <p><input type="radio" name="pregunta1" value="Convertirse en el Rey de los Piratas por ambición." required> Convertirse en el Rey de los Piratas por ambición. </p>
+                            <p><input type="radio" name="pregunta1" value="Ser el hombre más rico del mundo." required> Ser el hombre más rico del mundo. </p>
+                            <p><input type="radio" name="pregunta1" value="Convertirse en el Rey de los Piratas para tener libertad total." required> Convertirse en el Rey de los Piratas para tener libertad total. </p>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-4" style="color: #FFE0ED; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                        <p>
+                            2. <input type="text" name="pregunta2" value="JINBE" required> es el miembro más reciente en unirse a la tripulación de los Sombrero de Paja.
+                        </p>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header" style="color: #FFE0ED; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                        3. ¿Cuáles de los siguientes personajes han comido una fruta del diablo? (Selecciona 2)
+                        </div>
+                        <div class="card-body" style="color: #F1DCCD; font-family: sans-serif;">
+                            <p><input type="checkbox" name="pregunta3[]" value="Nico Robin"> Nico Robin </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="Sanji"> Sanji </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="Brook"> Brook </p>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header" style="color: #FFE0ED; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                        4. ¿Cómo obtuvo Zoro sus espadas y cuál es su objetivo como espadachín?
+                        </div>
+                        <div class="card-body" style="color: #F1DCCD; font-family: sans-serif;">
+                            <p><input type="radio" name="pregunta4" value="Las heredó de su maestro, y su sueño es vencer a Mihawk." required> Las heredó de su maestro, y su sueño es vencer a Mihawk. </p>
+                            <p><input type="radio" name="pregunta4" value="Ganó la mayoría de sus espadas en duelos, y su objetivo es convertirse en el mejor espadachín del mundo." required> Ganó la mayoría de sus espadas en duelos, y su objetivo es convertirse en el mejor espadachín del mundo. </p>
+                            <p><input type="radio" name="pregunta4" value="Las encontró en una isla perdida, y su objetivo es proteger a Luffy." required> Las encontró en una isla perdida, y su objetivo es proteger a Luffy. </p>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-4" style="color: #FFE0ED; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                        <p>
+                            5. <input type="text" name="pregunta5" value="NIKA" required> era conocido como el Dios del Sol por los esclavos de tiempos ancestrales y existe una fruta tipo zoan mítica con su nombre.
+                        </p>
+                    </div>
+                    <div class="card mb-4 "style="color: #FFE0ED; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    <div class="card-header"></div>
+                    6. ¿Qué poder le otorga a Luffy la fruta del diablo Gomu Gomu no Mi, y cómo lo utiliza en combate?
+                        </div>
+                        <div class="card-body" style="color: #F1DCCD; font-family: sans-serif;">
+                            <p><input type="radio" name="pregunta6" value="Le da la capacidad de crear fuego, y lo usa para lanzar ataques poderosos." required> Le da la capacidad de crear fuego, y lo usa para lanzar ataques poderosos. </p>
+                            <p><input type="radio" name="pregunta6" value="Le otorga habilidades elásticas, permitiéndole estirarse y usar técnicas de combate basadas en esa elasticidad." required> Le otorga habilidades elásticas, permitiéndole estirarse y usar técnicas de combate basadas en esa elasticidad. </p>
+                            <p><input type="radio" name="pregunta6" value="Le permite controlar el agua, lo que utiliza en el mar para derrotar a sus enemigos." required> Le permite controlar el agua, lo que utiliza en el mar para derrotar a sus enemigos. </p>
+                        </div>
+                    </div>
+                    <div class="card mb-4"></div>
+                        <div class="card-header" style="color: #FFE0ED; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                        7. ¿Cuáles de los siguientes personajes han sido prisioneros en Impel Down? (Selecciona 2)
+                        </div>
+                        <div class="card-body" style="color: #F1DCCD; font-family: sans-serif;">
+                            <p><input type="checkbox" name="pregunta7[]" value="Kaido"> Kaido </p>
+                            <p><input type="checkbox" name="pregunta7[]" value="Crocodile"> Crocodile </p>
+                            <p><input type="checkbox" name="pregunta7[]" value="Jinbe"> Jinbe </p>
+                        </div>
+                        <div class="card p-4 mb-4" style="color: #FFE0ED; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                            <p>
+                                8. <input type="text" name="pregunta8" value="Joy Boy" required> fue un hombre del Gran Reino nacido hace 900 años, al principio del Siglo Vacío, así como el primer pirata de la historia.
+                            </p>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header" style="color: #FFE0ED; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                            9. ¿Qué relación tienen Gol D. Roger y Monkey D. Luffy?
+                            </div>
+                            <div class="card-body" style="color: #F1DCCD; font-family: sans-serif;">
+                                <p><input type="radio" name="pregunta9" value="Roger es el padre de Luffy." required> Roger es el padre de Luffy. </p>
+                                <p><input type="radio" name="pregunta9" value="Luffy es descendiente de Roger, quien fue su abuelo." required> Luffy es descendiente de Roger, quien fue su abuelo. </p>
+                                <p><input type="radio" name="pregunta9" value="No hay una relación familiar directa, pero ambos comparten el mismo sueño de convertirse en el Rey de los Piratas." required> No hay una relación familiar directa, pero ambos comparten el mismo sueño de convertirse en el Rey de los Piratas. </p>
+                            </div>
+                        </div>
+                        <div class="card mb-4"></div>
+                        <div class="card-header" style="color: #FFE0ED; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                        10. ¿Cuáles de estos personajes son usuarios de Haki? (Selecciona 2)
+                        </div>
+                        <div class="card-body" style="color: #F1DCCD; font-family: sans-serif;">
+                            <p><input type="checkbox" name="pregunta10[]" value="Sanji"> Sanji </p>
+                            <p><input type="checkbox" name="pregunta10[]" value="Nami"> Nami </p>
+                            <p><input type="checkbox" name="pregunta10[]" value="Boa Hancock"> Boa Hancock </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><input type="submit" class="btn btn-primary" value="Terminar examen">
+        </form>
+    </div>
+</body>
+</html>
